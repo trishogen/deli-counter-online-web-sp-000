@@ -11,7 +11,7 @@ def line(queue)
 end
 
 def take_a_number(array, name)
-  queue.each_with_index do |person, index|
-    return "Welcome, #{name}. You are number #{index + 1} in line."
+    puts "Welcome, #{name}. You are number #{index + 1} in line."
+    return array << name
   end
 end
