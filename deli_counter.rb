@@ -20,6 +20,7 @@ def now_serving(array)
   if array.length == 0
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{array[0]}."
+    current_customer = array.pop
+    puts "Currently serving #{current_customer}."
   end
 end
