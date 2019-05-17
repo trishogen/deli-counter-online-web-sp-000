@@ -12,5 +12,5 @@ end
 
 def take_a_number(array, name)
     puts "Welcome, #{name}. You are number #{index + 1} in line."
-    return array << name
+    array << name
 end
