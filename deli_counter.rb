@@ -15,3 +15,11 @@ def take_a_number(array, name)
     puts "Welcome, #{name}. You are number #{array.find_index(name)+1} in line."
     array
 end
+
+def now_serving(array)
+  if array.length == 0
+    puts "The line is currently empty."
+  else
+    puts "Currently serving #{array[0]}"
+  end
+end
