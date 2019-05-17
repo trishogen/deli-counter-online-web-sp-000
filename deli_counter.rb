@@ -2,6 +2,9 @@ def line(queue)
   if queue.length == 0
     puts "The line is currently empty."
   else
-    puts queue
+    queue.each_with_index do |person, index|
+      phrase = "The line is currently:" << " #{index + 1}. #{person}"
+    end
+    puts phrase
   end
 end
